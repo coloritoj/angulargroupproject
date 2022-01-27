@@ -7285,19 +7285,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\color\\.nuget\\packages\\": {}
+    "C:\\Users\\alexi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\color\\source\\repos\\AngularGroupProject\\AngularGroupProjectSolution\\AngularProject\\AngularProject.csproj",
+      "projectUniqueName": "C:\\Users\\alexi\\Source\\Repos\\angulargroupproject\\AngularGroupProjectSolution\\AngularProject\\AngularProject.csproj",
       "projectName": "AngularProject",
-      "projectPath": "C:\\Users\\color\\source\\repos\\AngularGroupProject\\AngularGroupProjectSolution\\AngularProject\\AngularProject.csproj",
-      "packagesPath": "C:\\Users\\color\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\color\\source\\repos\\AngularGroupProject\\AngularGroupProjectSolution\\AngularProject\\obj\\",
+      "projectPath": "C:\\Users\\alexi\\Source\\Repos\\angulargroupproject\\AngularGroupProjectSolution\\AngularProject\\AngularProject.csproj",
+      "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexi\\Source\\Repos\\angulargroupproject\\AngularGroupProjectSolution\\AngularProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\color\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7362,7 +7362,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

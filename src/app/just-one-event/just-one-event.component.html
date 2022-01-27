@@ -1,0 +1,11 @@
+ <h3>{{theEvent?.name}}</h3> <button (click)="showMoreDetails()">More details:</button>
+<ng-container *ngIf="showdetails">
+
+ <p>Description: {{ theEvent?.description }}</p>
+ <p>Type: {{ theEvent?.type }}</p> 
+ <p>Maxcapacity: {{ theEvent?.maxcapacity }}</p>
+ <p>Still available?: {{ theEvent?.eventfull }}</p>
+
+</ng-container> 
+
+<app-add-event></app-add-event>

@@ -1,0 +1,16 @@
+<div>
+    <h1>Add Your Event!</h1>
+    <p>
+        Name: <input type="text" [(ngModel)]="newEvent.name" />
+    </p>
+    <p>
+        Type: <input type="text" [(ngModel)]="newEvent.type" />
+    </p>
+    <p>
+        Description: <input type="text" [(ngModel)]="newEvent.description" />
+    </p>
+    <p>
+        Maxcapacity: <input type="number" [(ngModel)]="newEvent.maxcapacity" />
+    </p>
+    <button (click)="addevent()">Add Band!</button>
+</div>

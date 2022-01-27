@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Event } from '../event';
 
 @Component({
   selector: 'app-favorites-list',
@@ -11,5 +12,9 @@ export class FavoritesListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() theFav?: Event;
+
+ 
 
 }

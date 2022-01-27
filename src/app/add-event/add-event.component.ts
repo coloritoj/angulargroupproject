@@ -26,5 +26,10 @@ export class AddEventComponent implements OnInit {
 
   addevent(){
     this.addEvent.emit(this.newEvent)
+    this.newEvent.name = '';
+    this.newEvent.type = '';
+    this.newEvent.description = '';
+    this.newEvent.maxcapacity = 0;
+    this.newEvent.eventfull = false;
   }
 }

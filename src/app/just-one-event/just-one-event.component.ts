@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Event } from '../event';
+import { FavoritesListComponent } from '../favorites-list/favorites-list.component';
 
 
 @Component({
@@ -21,4 +22,16 @@ export class JustOneEventComponent implements OnInit {
   showMoreDetails(){
     this.showdetails = true;
   }
+  
+  hideMoreDetails(){
+    this.showdetails = false;
+  }
+
+  favs: Event [] = [];
+
+  addToFavs(fav: Event): Event[] {
+    this.favs.push(fav);
+    return this.favs;
+  }
+  
 }

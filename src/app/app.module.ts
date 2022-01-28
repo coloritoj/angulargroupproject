@@ -8,6 +8,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 import { AddEventComponent } from './add-event/add-event.component';
 import { JustOneEventComponent } from './just-one-event/just-one-event.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { JustOneEventComponent } from './just-one-event/just-one-event.component
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

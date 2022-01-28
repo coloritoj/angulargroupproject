@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Event } from '../event';
+import { Favorite } from '../favorite';
+import { FavoriteAPIService } from '../favorite-api.service';
 import { FavoritesListComponent } from '../favorites-list/favorites-list.component';
 
 
@@ -10,11 +12,14 @@ import { FavoritesListComponent } from '../favorites-list/favorites-list.compone
 })
 export class JustOneEventComponent implements OnInit {
 
- @Input() theEvent?: Event;
+  @Input() theEvent?: Event;
+
+  allFavorites: Favorite[] = [];
 
   showdetails: boolean = false;
+  FavAdded: boolean = false;
 
-  constructor() { }
+  constructor(private favapiservice: FavoriteAPIService) { }
 
   ngOnInit(): void {
   }
@@ -27,11 +32,45 @@ export class JustOneEventComponent implements OnInit {
     this.showdetails = false;
   }
 
+  ToggleFavAdded(){
+    this.FavAdded = true;
+  }
+
+
   favs: Event [] = [];
 
-  addToFavs(fav: Event): Event[] {
-    this.favs.push(fav);
-    return this.favs;
+  refreshList() {
+    this.favapiservice.listFavorites(
+      (results: any) => {
+        this.allFavorites = results;
+      }
+    );
+  }
+
+  addToFavs() {
+    if (this.theEvent) {
+      let fav: Favorite = {
+        id: 0,
+        name:this.theEvent.name,
+        type: this.theEvent.type,
+        description: this.theEvent.description,
+        maxcapacity:this.theEvent.maxcapacity,
+        eventfull: this.theEvent.eventfull
+      };
+      this.favapiservice.addToFavorites(fav,
+        () => {
+          this.refreshList();
+        }
+      );
+    }
+  }
+
+  removeFav(id: number){
+    this.favapiservice.removeFav(
+      id, () => {
+        this.refreshList();
+      }
+    )
   }
   
 }

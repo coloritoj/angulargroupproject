@@ -1,4 +1,4 @@
-<p>event-list works!</p>
+<h2>Weekly Events: </h2>
 
 <div *ngFor="let event of allEvents"> 
     <app-just-one-event [theEvent]= "event"></app-just-one-event>
@@ -6,5 +6,4 @@
 
 <div>
     <app-add-event (addEvent)="addEvent($event)"></app-add-event>
-
 </div>

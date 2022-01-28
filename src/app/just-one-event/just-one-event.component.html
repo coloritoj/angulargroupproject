@@ -6,9 +6,12 @@
  <p>Maxcapacity: {{ theEvent?.maxcapacity }}</p>
  <p>Event full?: {{ theEvent?.eventfull }}</p>
 
- <button (click)="hideMoreDetails()">Hide details</button>  
+ <button (click)="hideMoreDetails()">Hide details</button>  <br/> <br/>
  
- <app-favorites-list (addToFavs)="addToFavs(this.)" ></app-favorites-list>
+ <button (click)="addToFavs()" (click)="ToggleFavAdded()" >Add to Favorite</button>
  
- 
+ <ng-container *ngIf="FavAdded">
+    Favorite added!
+</ng-container>
+
 </ng-container> 

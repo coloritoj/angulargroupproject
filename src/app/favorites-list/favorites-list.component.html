@@ -1,1 +1,10 @@
 <h1> My Favorite Events</h1>
+<ng-container *ngFor="let fav of allItems"> <button (click)="removeFav(fav.id)">Remove</button>
+
+   <p>{{ fav.name }}</p> 
+   <p>{{ fav.type }}</p> 
+   <p>{{ fav.description }}</p> 
+   <p>{{ fav.maxcapacity }}</p> 
+   <p>{{ fav.eventfull }}</p> 
+
+</ng-container>

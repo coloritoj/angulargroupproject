@@ -12,6 +12,7 @@ import { JustOneEventComponent } from '../just-one-event/just-one-event.componen
 export class FavoritesListComponent implements OnInit {
 
   allItems: Favorite[] = [];
+  showdetails: boolean = false;
 
   constructor(private favapiservice: FavoriteAPIService) { }
 
@@ -36,5 +37,15 @@ export class FavoritesListComponent implements OnInit {
       }
     )
   }
+
+  showMoreDetails(){
+    this.showdetails = true;
+  }
+
+  hideMoreDetails(){
+    this.showdetails = false;
+  }
+
+
 
 }

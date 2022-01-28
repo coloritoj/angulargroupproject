@@ -1,0 +1,14 @@
+div{
+    background-color: rgb(27, 156, 207);
+    margin: 2em;
+    padding: 2em;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 12px 12px 2px 1px rgba(3, 78, 32, 0.2);
+
+}
+
+button{
+    background-color: rgb(216, 9, 9);
+    color: white;
+} 
